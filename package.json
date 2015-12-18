@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "2016 net.rebasoft Rebrand",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/clintmilner/rebasoft-2016-rebrand.git"
@@ -15,5 +12,13 @@
   "bugs": {
     "url": "https://github.com/clintmilner/rebasoft-2016-rebrand/issues"
   },
-  "homepage": "https://github.com/clintmilner/rebasoft-2016-rebrand"
+  "homepage": "http://rebasoft.net",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-uglify": "^1.5.1"
+  }
 }

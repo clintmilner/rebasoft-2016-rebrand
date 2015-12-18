@@ -1,10 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Rebasoft.net 2016">
+    <link rel="icon" href="img/favicon.ico">
+    <link href="css/master.css" rel="stylesheet">
+    <title>Rebasoft - Empowering Your Network</title>
 </head>
 <body>
+    <nav id="topNav" class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+
+                    <img src="img/rebasoft-logo.svg" class="svg" height="42px">
+
+                </a>
+            </div>
+            <div id="navbar" class="collapse pull-right navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">products</a></li>
+                    <li><a href="#about">downloads</a></li>
+                    <li><a href="#contact">support</a></li>
+                    <li><a href="#contact">blog</a></li>
+                    <li><a href="#contact">corporate</a></li>
+                    <li><a href="#contact">contact us</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- Carousel
+        ================================================== -->
+    <div id="rs-cta" class="carousel fade" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#rs-cta" data-slide-to="0" class="active"></li>
+            <li data-target="#rs-cta" data-slide-to="1"></li>
+            <li data-target="#rs-cta" data-slide-to="2"></li>
+            <li data-target="#rs-cta" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/nodes.svg" class="svg-nodes" height="50%">
+                <img class="first-slide" src="img/slider/bank.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Example headline.</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/nodes.svg" class="svg-nodes" height="50%">
+                <img class="second-slide" src="img/slider/new-york.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/nodes.svg" class="svg-nodes" height="50%">
+                <img class="third-slide" src="img/slider/working-on-laptop.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/nodes.svg" class="svg-nodes" height="50%">
+                <img class="fourth-slide" src="img/slider/london.jpg" alt="4th slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
+            <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+            <!--<span class="sr-only">Previous</span>-->
+        <!--</a>-->
+        <!--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
+            <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+            <!--<span class="sr-only">Next</span>-->
+        <!--</a>-->
+    </div><!-- /.carousel -->
+    <div class="container-fluid">
+        <div id="div-1" class="row">
+            <div class="col-sm-8">
+                <h3>Rebasoft can see all devices, which applications they use, who is using them in real time, process and store this information for future audit.</h3>
+            </div>
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-success">Book A Demo Now</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function() {
+            console.log( '$ loaded' );
+            $('#rs-cta').carousel({
+                interval: 5000
+            })
+        });
+    </script>
+
 
 </body>
 </html>

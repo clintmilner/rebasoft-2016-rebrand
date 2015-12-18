@@ -1,4 +1,6 @@
 /.idea
 *.psd
 builder/js/.jscsrc
+/builder/js/tests
 builder/js/.jshintrc
+/node_modules
