@@ -1,0 +1,4 @@
+/.idea
+*.psd
+builder/js/.jscsrc
+builder/js/.jshintrc

@@ -1,0 +1,19 @@
+{
+  "name": "net.rebasoft",
+  "version": "1.0.0",
+  "description": "2016 net.rebasoft Rebrand",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clintmilner/rebasoft-2016-rebrand.git"
+  },
+  "author": "Clint Milner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clintmilner/rebasoft-2016-rebrand/issues"
+  },
+  "homepage": "https://github.com/clintmilner/rebasoft-2016-rebrand"
+}
