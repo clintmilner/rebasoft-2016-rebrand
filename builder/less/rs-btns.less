@@ -1,0 +1,36 @@
+@import "rs-vars";
+
+.btn {
+    font-family: @rmc-headline-bold;
+    text-transform: uppercase;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+
+    &-cta {
+        font-size: 1.8em;
+        &-xl {
+            padding: 21px 5px;
+        }
+        &-md {
+            padding: 7px 5px;
+        }
+    }
+
+    &-success {
+        color: @rs-white;
+        background: @rs-green;
+        border-color: darken( @rs-green, 2%);
+        &:hover, &:active, &:focus {
+            background: lighten( @rs-green, 2%);
+        }
+    }
+    &-default {
+        color: @rs-purple;
+        background: @rs-lt-grey;
+        border-color: darken( @rs-lt-grey, 2%);
+        &:hover, &:active, &:focus {
+            background: lighten( @rs-lt-grey, 2%);
+        }
+    }
+}

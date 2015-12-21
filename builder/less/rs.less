@@ -1,27 +1,57 @@
 @import "rs-vars";
-//@import "rs-typography";
-//@import "rs-btns";
+@import "rs-typography";
+@import "rs-btns";
 
 
 body {
+    font-family: @rmc-body;
     #topNav {
         background: #49494d;
         height: 76px;
-        border-bottom: 2px solid #f1f1f1;
+        border-bottom: 2px solid @rs-white;
 
         #navbar {
             height: 100%;
 
             .navbar-nav {
+                li {
+                    &.active {
+                        border-bottom: 2px solid @rs-green;
+                    }
+                    &:hover {
+                        border-bottom: 2px solid @rs-green;
+                    }
+                }
                 a {
                     padding-top: 40px;
+                    color: @rs-white;
+                    &:hover, &:active, &:focus {
+                        background: darken( @rs-dk-grey, 5%);
+                    }
+                    outline-color: lighten( @rs-dk-grey, 5%);
                 }
             }
         }
     }
     #rs-cta {
         .item {
-            height: 560px;
+            height:311px;
+
+            /* Small devices (tablets, 768px and up) */
+            @media (min-width: @screen-sm-min) {
+                height: 420px;
+            }
+
+            /* Medium devices (desktops, 992px and up) */
+            @media (min-width: @screen-md-min) {
+                height: 520px;
+            }
+
+            /* Large devices (large desktops, 1200px and up) */
+            @media (min-width: @screen-lg-min) {
+                height: 600px;
+            }
+
             width: auto;
         }
 
@@ -66,14 +96,218 @@ body {
         }
         .svg-nodes {
             position: absolute;
+            z-index: 99;
+        }
+
+        .carousel-caption {
+            z-index: 999;
+            width: 50%;
+
+            p
+            {
+                font-size: 2em;
+                font-family: @rmc-headline-bold;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                text-shadow: none;
+                padding: 1px 0.5em;
+                display: table;
+
+
+                &.carousel
+                {
+                    &-logo {
+                        font-size: 1em;
+                        height: 4em;
+                        //width: 50%;
+                        display: block;
+                        position: relative;
+
+
+                        img {
+                            position: absolute;
+                            top: 6px;
+                            left: 0;
+                            width: 50%;
+                            padding: 1px;
+                            background: @rs-purple;
+                        }
+                    }
+                    &-tagline {
+                        background: @rs-green;
+
+
+                    }
+                    &-product {
+                        background: @rs-purple;
+                    }
+                }
+
+
+            }
+
+            &.ac {
+                p {
+                    text-align: left;
+                }
+                .carousel {
+                    &-logo { }
+                    &-tagline { }
+                    &-product { }
+                }
+            }
+            &.aa {
+                p {
+                    text-align: right;
+                }
+                .carousel {
+                    &-logo {
+
+                    }
+                    &-tagline { }
+                    &-product { }
+                }
+            }
+            &.ta {
+                p {
+                    text-align: left;
+                }
+                .carousel {
+                    &-logo { }
+                    &-tagline { }
+                    &-product { }
+                }
+            }
+            &.rmc {
+                p {
+                    text-align: right;
+                }
+                .carousel {
+                    &-logo { }
+                    &-tagline { }
+                    &-product { }
+                }
+            }
+
+            @media (min-width: @screen-xs-min) {
+                bottom: 5%;
+                left: 5%;
+                p {
+                    font-size: .85em;
+                }
+            }
+            /* Small devices (tablets, 768px and up) */
+            @media (min-width: @screen-sm-min) {
+                bottom: 5%;
+                left: 5%;
+                p {
+                    font-size: 1.3em;
+                }
+            }
+
+            /* Medium devices (desktops, 992px and up) */
+            @media (min-width: @screen-md-min) {
+                bottom: 5%;
+                left: 5%;
+                p {
+                    font-size: 1.8em;
+                }
+            }
+
+            /* Large devices (large desktops, 1200px and up) */
+            @media (min-width: @screen-lg-min) {
+                bottom: 5%;
+                left: 10%;
+            }
         }
     }
 
     #div-1 {
-        background: #dbdbdb;
-        height: 160px;
-        border-top: 2px solid #f1f1f1;
-        border-bottom: 2px solid #f1f1f1;
+        background: url( "../img/network.svg" ) #dbdbdb 0 25%;
+        background-size: cover;
+        height: 185px;
+        border-top: 2px solid @rs-white;
+        border-bottom: 2px solid @rs-white;
+        .btn {
+            padding: 10px 5px;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin-top: 1%;
+        }
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-min) {
+            .btn {
+                margin-top:40%;
+                font-size: 1.1em;
+            }
+            h3 {
+                font-size: 1.8em;
+                margin-top: 5%;
+            }
+        }
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: @screen-md-min) {
+            .btn {
+                margin-top:30%;
+                font-size: 1.4em;
+            }
+            h3 {
+                font-size: 1.8em;
+                margin-top: 7%;
+            }
+
+        }
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: @screen-lg-min) {
+            .btn {
+                margin-top:22%;
+                font-size: 1.8em;
+            }
+            h3 {
+                font-size: 1.8em;
+                margin-top: 5%;
+            }
+
+        }
+
+    }
+
+    #div-rs-info {
+        background: @rs-purple;
+        padding: 45px 0;
+        p, h1, h2 {
+            color: @rs-white;
+        }
+        h1 {
+            font-size: 2.4em;
+            text-align: center;
+            padding-bottom: 1em;
+        }
+        h2 {
+            //22px
+            font-size: 1.5em;
+        }
+        ol {
+            .h1 {
+                text-align: left;
+                color: @rs-white;
+
+                &:first-child {
+                    padding-top: 1.5em;
+                }
+
+                &:last-child {
+                    padding-bottom: 1.5em;
+                }
+            }
+        }
+        p {
+            font-size: 1.2em;
+        }
     }
 
 

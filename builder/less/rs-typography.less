@@ -1,0 +1,40 @@
+@import "rs-vars";
+
+
+// Headings
+@font-size-base: 14px;
+@font-size-large: ceil((@font-size-base * 1.25));
+@font-size-small: ceil((@font-size-base * 0.85));
+
+@font-size-h1: floor((@font-size-base * 1.72));
+@font-size-h2: floor((@font-size-base * 1.36));
+@font-size-h3: floor((@font-size-base * 1.09));
+@font-size-h4: floor((@font-size-base * 1.03));
+@font-size-h5: floor((@font-size-base * 1.03));
+@font-size-h6: floor((@font-size-base * 0.91));
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+
+
+h1, .h1 {
+    font-family: @rmc-headline-bold;
+    text-transform: uppercase;
+    color: @rs-dk-grey;
+}
+h2, .h2 {
+    font-family: @rmc-headline-light;
+    text-transform: uppercase;
+    color: @rs-dk-grey;
+    font-weight: normal !important;
+}
+h3, .h3 {
+    text-transform: uppercase;
+    font-family: @rmc-headline-light;
+    color: @rs-dk-grey;
+}
