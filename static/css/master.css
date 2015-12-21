@@ -1075,8 +1075,8 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .pager .next>a,.pager .next>span{float:right}
 .pager .previous>a,.pager .previous>span{float:left}
 .pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,.pager .disabled>span{color:#777;background-color:#fff;cursor:not-allowed}
+a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointer;text-decoration:none}
 .label{display:inline;padding:.2em .6em .3em;font-size:75%;color:#fff;border-radius:.25em}
-a.label:focus,a.label:hover{color:#fff;text-decoration:none;cursor:pointer}
 .label:empty{display:none}
 .label-default{background-color:#777}
 .label-default[href]:focus,.label-default[href]:hover{background-color:#5e5e5e}
@@ -1094,7 +1094,6 @@ a.label:focus,a.label:hover{color:#fff;text-decoration:none;cursor:pointer}
 .badge:empty{display:none}
 .media-object,.thumbnail{display:block}
 .btn-group-xs>.btn .badge,.btn-xs .badge{top:0;padding:1px 5px}
-a.badge:focus,a.badge:hover{color:#fff;text-decoration:none;cursor:pointer}
 .list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#337ab7;background-color:#fff}
 .jumbotron,.jumbotron .h1,.jumbotron h1{color:inherit}
 .list-group-item>.badge{float:right}
@@ -1462,6 +1461,7 @@ body #topNav #navbar .navbar-nav li.active,body #topNav #navbar .navbar-nav li:h
 body #div-1,body #div-rs-info,body #div-rs-twitter{border-bottom:2px solid #f1f1f1}
 body #topNav #navbar .navbar-nav a{padding-top:40px;color:#f1f1f1;outline-color:#55555a}
 body #topNav #navbar .navbar-nav a:active,body #topNav #navbar .navbar-nav a:focus,body #topNav #navbar .navbar-nav a:hover{background:#3d3d40}
+body #topNav #navbar .navbar-brand{margin-top:3px}
 body #rs-cta .item{height:311px;width:auto}
 @media (min-width:768px){body #rs-cta .item{height:420px}
 }
@@ -1477,6 +1477,7 @@ body #rs-cta img{width:100%;position:absolute;top:-20%}
 body #rs-cta .svg-nodes{position:absolute;z-index:99}
 body #rs-cta .carousel-caption{z-index:999;width:50%}
 body #rs-cta .carousel-caption p{font-size:2em;font-family:nexa_boldregular,Helvetica,Arial,sans-serif;text-transform:uppercase;margin-bottom:0;text-shadow:none;padding:1px .5em;display:table}
+body #div-rs-news-and-blog .rs-blogs section h2 a,body #div-rs-phone div .phone-label{font-family:nexa_lightregular,Helvetica,Arial,sans-serif}
 body #rs-cta .carousel-caption p.carousel-logo{font-size:1em;height:4em;display:block;position:relative}
 body #rs-cta .carousel-caption p.carousel-logo img{position:absolute;top:6px;left:0;width:50%;padding:1px;background:#5a6174}
 body #rs-cta .carousel-caption p.carousel-tagline{background:#9dc63f}
@@ -1528,6 +1529,7 @@ body #div-rs-info section.ta .rs-product{background-position:-205px -4px}
 body #div-rs-info section.ta .rs-product:hover{background-position:-205px -105px}
 body #div-rs-info section.rmc .rs-product{background-position:-307px -3px}
 body #div-rs-info section.rmc .rs-product:hover{background-position:-307px -105px}
+body #div-rs-sub-footer,body #div-rs-twitter{background:#49494d;border-top:2px solid #f1f1f1}
 body #div-rs-casestudies{background:url(../img/bg/bank.jpeg) 50% 33% no-repeat fixed;padding:45px 0}
 body #div-rs-casestudies h1,body #div-rs-casestudies p{color:#f1f1f1;text-align:right}
 body #div-rs-casestudies h1{font-size:2.4em;text-align:right;padding-bottom:1em}
@@ -1536,7 +1538,24 @@ body #div-rs-casestudies section{background:rgba(255,255,255,.75);padding:1em;ma
 body #div-rs-casestudies section:first-child{margin-top:0}
 body #div-rs-casestudies section p{color:#49494d;text-align:left;font-size:1em}
 body #div-rs-casestudies section img{padding-top:40px}
-body #div-rs-twitter{background:#49494d;height:auto;border-top:2px solid #f1f1f1;padding:.5em 0}
+body #div-rs-twitter{height:auto;padding:.5em 0}
 body #div-rs-twitter .date,body #div-rs-twitter .handle,body #div-rs-twitter p{font-size:1.2em;color:#f1f1f1;line-height:1.5em}
 body #div-rs-twitter p{font-size:1.5em;margin-top:1em}
 body #div-rs-twitter a:active,body #div-rs-twitter a:focus,body #div-rs-twitter a:hover{color:#9dc63f}
+body #div-rs-news-and-blog{background:url(../img/network.svg) 80% -20% fixed #dbdbdb;background-size:122%;padding:60px}
+body #div-rs-news-and-blog h1{font-size:2.2em}
+body #div-rs-news-and-blog section{margin:3em 0}
+body #div-rs-news-and-blog section p{font-size:1.1em}
+body #div-rs-news-and-blog section p .date{text-transform:uppercase;color:#7a95ad}
+body #div-rs-news-and-blog .rs-blogs section h2 a{color:#49494d}
+body #div-rs-footer a:active,body #div-rs-footer a:focus,body #div-rs-footer a:hover,body #div-rs-news-and-blog .rs-blogs section h2 a:hover{color:#9dc63f}
+body #div-rs-phone{height:100px;background:#9dc63f;text-transform:uppercase;font-weight:400;font-size:2.5em;color:#f1f1f1}
+body #div-rs-phone div{padding-top:.7em;text-align:right}
+body #div-rs-phone div .phone-label .phone-number,body #div-rs-sub-footer .tagline{font-family:nexa_boldregular,Helvetica,Arial,sans-serif}
+body #div-rs-footer{background:url(../img/nodes.svg) 0 -125% fixed #6c6c71;background-size:110%;padding:30px 0;border-top:3px solid #49494d}
+body #div-rs-footer a,body #div-rs-footer h2{color:#f1f1f1}
+body #div-rs-footer a{font-weight:400}
+body #div-rs-footer ul{padding:0;margin:0}
+body #div-rs-footer ul li{list-style:none;margin:.5em 0}
+body #div-rs-sub-footer{color:#f1f1f1;padding:1em 0}
+body #div-rs-sub-footer .tagline{text-transform:uppercase}

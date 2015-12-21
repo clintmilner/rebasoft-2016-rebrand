@@ -18,7 +18,8 @@ var cssTarget = 'static/css';
 var jsTarget = 'static/js';
 
 var bsLess = [ 'builder/less/*.less' ],
-    bsJS = [ 'builder/js/tooltip.js', 'builder/js/*.js' ]; // tooltip.js needs to be loaded first
+    //bsJS = [ 'builder/js/tooltip.js', 'builder/js/*.js' ]; // tooltip.js needs to be loaded first
+    bsJS = [ 'builder/js/collapse.js', 'builder/js/carousel.js', 'builder/js/rs-scripts.js' ]; // maybe just add the stuff we're using...
 
     gulp.task('build-less', function() {
         gulp.src(masterLess)

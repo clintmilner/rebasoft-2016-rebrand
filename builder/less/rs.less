@@ -5,6 +5,7 @@
 
 body {
     font-family: @rmc-body;
+
     #topNav {
         background: #49494d;
         height: 76px;
@@ -30,6 +31,10 @@ body {
                     }
                     outline-color: lighten( @rs-dk-grey, 5%);
                 }
+            }
+
+            .navbar-brand {
+                margin-top: 3px;
             }
         }
     }
@@ -433,6 +438,105 @@ body {
 
         a:hover, a:active, a:focus {
             color: @rs-green;
+        }
+    }
+
+    #div-rs-news-and-blog {
+        background: url( "../img/network.svg" ) #dbdbdb 80% -20% fixed repeat;
+        background-size: 122%;
+        padding: 60px;
+        h1 {
+            font-size: 2.2em;
+        }
+
+        section {
+            margin: 3em 0;
+            p {
+                font-size: 1.1em;
+                .date {
+                    text-transform: uppercase;
+                    color: @rs-blue;
+                }
+            }
+        }
+
+        .rs-blogs {
+            section {
+
+                h2 {
+                    a {
+                        font-family: @rmc-headline-light;
+                        color: @rs-dk-grey;
+                        &:hover {
+                            color: @rs-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #div-rs-phone {
+        height: 100px;
+        background: @rs-green;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 2.5em;
+        color: @rs-white;
+        div {
+            padding-top: 0.7em;
+            text-align: right;
+            .phone-label {
+                font-family: @rmc-headline-light;
+                .phone-number {
+                    font-family: @rmc-headline-bold;
+                }
+            }
+        }
+
+    }
+
+    #div-rs-footer {
+        background: #6c6c71 url( "../img/nodes.svg" ) 0 -125% fixed;
+        background-size: 110%;
+        padding: 30px 0;
+        border-top: 3px solid @rs-dk-grey;
+
+        h2, a {
+            color: @rs-white;
+            //text-align: right;
+        }
+
+        a {
+            font-weight: normal;
+            &:hover, &:active, &:focus {
+                color: @rs-green;
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+                margin: .5em 0;
+                //text-align: right;
+
+            }
+        }
+
+
+    }
+
+    #div-rs-sub-footer {
+        background: @rs-dk-grey;
+        color: @rs-white;
+        padding: 1em 0;
+        border-top: 2px solid @rs-white;
+
+        .tagline {
+            font-family: @rmc-headline-bold;
+            text-transform: uppercase;
         }
     }
 
