@@ -1459,6 +1459,7 @@ body{font-family:latoregular,Helvetica,Arial,sans-serif}
 body #topNav{background:#49494d;height:76px;border-bottom:2px solid #f1f1f1}
 body #topNav #navbar{height:100%}
 body #topNav #navbar .navbar-nav li.active,body #topNav #navbar .navbar-nav li:hover{border-bottom:2px solid #9dc63f}
+body #div-1,body #div-rs-info{border-bottom:2px solid #f1f1f1}
 body #topNav #navbar .navbar-nav a{padding-top:40px;color:#f1f1f1;outline-color:#55555a}
 body #topNav #navbar .navbar-nav a:active,body #topNav #navbar .navbar-nav a:focus,body #topNav #navbar .navbar-nav a:hover{background:#3d3d40}
 body #rs-cta .item{height:311px;width:auto}
@@ -1493,7 +1494,7 @@ body #rs-cta .carousel-caption p{font-size:1.3em}
 @media (min-width:992px){body #rs-cta .carousel-caption{bottom:5%;left:5%}
 body #rs-cta .carousel-caption p{font-size:1.8em}
 }
-body #div-1{background:url(../img/network.svg) 0 -15% fixed #dbdbdb;background-size:cover;height:185px;border-top:2px solid #f1f1f1;border-bottom:2px solid #f1f1f1}
+body #div-1{background:url(../img/network.svg) 0 -15% fixed #dbdbdb;background-size:cover;height:185px;border-top:2px solid #f1f1f1}
 body #div-1 .btn{padding:10px 5px}
 body #div-1 h3{font-size:1.5em;margin-top:1%}
 @media (min-width:768px){body #div-1 .btn{margin-top:40%;font-size:1.1em}
@@ -1526,3 +1527,12 @@ body #div-rs-info section.ta .rs-product{background-position:-205px -4px}
 body #div-rs-info section.ta .rs-product:hover{background-position:-205px -105px}
 body #div-rs-info section.rmc .rs-product{background-position:-307px -3px}
 body #div-rs-info section.rmc .rs-product:hover{background-position:-307px -105px}
+body #div-rs-casestudies{background:url(../img/bg/bank.jpeg) 50% 33% no-repeat fixed;padding:45px 0}
+body #div-rs-casestudies h1,body #div-rs-casestudies p{color:#f1f1f1;text-align:right}
+body #div-rs-casestudies h1{font-size:2.4em;text-align:right;padding-bottom:1em}
+body #div-rs-casestudies p{font-size:1.2em}
+body #div-rs-casestudies section{background:rgba(255,255,255,.75);padding:1em;margin:1.5em auto}
+body #div-rs-casestudies section:first-child{margin-top:0}
+body #div-rs-casestudies section h2{margin-top:1em}
+body #div-rs-casestudies section p{color:#49494d;text-align:left;font-size:1em}
+body #div-rs-casestudies section img{padding-top:40px}

@@ -280,6 +280,7 @@ body {
         background: @rs-purple url("../img/rebasoft-logo-watermark.svg") 130% 180% no-repeat scroll;
         -webkit-background-size: 60% auto;
         background-size:60% auto;
+        border-bottom: 2px solid @rs-white;
 
         p, h1, h2 {
             color: @rs-white;
@@ -367,5 +368,45 @@ body {
         }
     }
 
+    #div-rs-casestudies {
+        background: url( "../img/bg/bank.jpeg") 50% 33% no-repeat fixed;
+        padding: 45px 0;
+
+        p, h1 {
+            color: @rs-white;
+            text-align: right;
+        }
+        h1 {
+            font-size: 2.4em;
+            text-align: right;
+            padding-bottom: 1em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+
+        section {
+            background: rgba(255,255,255, .75);
+            padding: 1em;
+            margin: 1.5em auto;
+
+            &:first-child {
+                margin-top: 0;
+            }
+            h2 {
+                margin-top: 1em;
+            }
+
+            p {
+                color: @rs-dk-grey;
+                text-align: left;
+                font-size: 1em;
+
+            }
+            img {
+                padding-top: 40px;
+            }
+        }
+    }
 
 }
