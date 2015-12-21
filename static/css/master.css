@@ -1479,7 +1479,7 @@ body #rs-cta .carousel-caption p{font-size:2em;font-family:nexa_boldregular,Helv
 body #rs-cta .carousel-caption p.carousel-logo{font-size:1em;height:4em;display:block;position:relative}
 body #rs-cta .carousel-caption p.carousel-logo img{position:absolute;top:6px;left:0;width:50%;padding:1px;background:#5a6174}
 body #rs-cta .carousel-caption p.carousel-tagline{background:#9dc63f}
-body #div-rs-info,body #rs-cta .carousel-caption p.carousel-product{background:#5a6174}
+body #rs-cta .carousel-caption p.carousel-product{background:#5a6174}
 body #rs-cta .carousel-caption.ac p{text-align:left}
 body #rs-cta .carousel-caption.aa p{text-align:right}
 body #rs-cta .carousel-caption.ta p{text-align:left}
@@ -1506,11 +1506,23 @@ body #div-1 h3{font-size:1.8em;margin-top:7%}
 body #div-1 .btn{margin-top:22%;font-size:1.8em}
 body #div-1 h3{font-size:1.8em;margin-top:5%}
 }
-body #div-rs-info{padding:45px 0}
+body #div-rs-info{padding:45px 0;background:url(../img/rebasoft-logo-watermark.svg) 130% 180% no-repeat #5a6174;background-size:60% auto}
 body #div-rs-info h1,body #div-rs-info h2,body #div-rs-info p{color:#f1f1f1}
 body #div-rs-info h1{font-size:2.4em;text-align:center;padding-bottom:1em}
 body #div-rs-info h2{font-size:1.5em}
+body #div-rs-info h2 a{color:#f1f1f1;text-decoration:underline}
+body #div-rs-info h2 a:hover{color:#9dc63f}
 body #div-rs-info ol .h1{text-align:left;color:#f1f1f1}
 body #div-rs-info ol .h1:first-child{padding-top:1.5em}
 body #div-rs-info ol .h1:last-child{padding-bottom:1.5em}
 body #div-rs-info p{font-size:1.2em}
+body #div-rs-info section .icon{padding-top:1em}
+body #div-rs-info section .rs-product{height:101px;width:101px;display:inline-block;background:url(../img/rs-product-sprite.png) no-repeat;font-size:0}
+body #div-rs-info section.aa .rs-product{background-position:0 -3px}
+body #div-rs-info section.aa .rs-product:hover{background-position:0 -106px}
+body #div-rs-info section.ac .rs-product{height:102px;width:102px;background-position:-102px -4px}
+body #div-rs-info section.ac .rs-product:hover{background-position:-102px -106px}
+body #div-rs-info section.ta .rs-product{background-position:-205px -4px}
+body #div-rs-info section.ta .rs-product:hover{background-position:-205px -105px}
+body #div-rs-info section.rmc .rs-product{background-position:-307px -3px}
+body #div-rs-info section.rmc .rs-product:hover{background-position:-307px -105px}

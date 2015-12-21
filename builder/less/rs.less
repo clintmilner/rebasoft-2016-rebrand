@@ -273,12 +273,14 @@ body {
             }
 
         }
-
     }
 
     #div-rs-info {
-        background: @rs-purple;
         padding: 45px 0;
+        background: @rs-purple url("../img/rebasoft-logo-watermark.svg") 130% 180% no-repeat scroll;
+        -webkit-background-size: 60% auto;
+        background-size:60% auto;
+
         p, h1, h2 {
             color: @rs-white;
         }
@@ -288,8 +290,14 @@ body {
             padding-bottom: 1em;
         }
         h2 {
-            //22px
             font-size: 1.5em;
+            a {
+                color: @rs-white;
+                text-decoration: underline;
+                &:hover {
+                    color: @rs-green;
+                }
+            }
         }
         ol {
             .h1 {
@@ -307,6 +315,55 @@ body {
         }
         p {
             font-size: 1.2em;
+        }
+
+        section
+        {
+            .icon {
+                padding-top: 1em;
+            }
+            .rs-product {
+                height: 101px;
+                width: 101px;
+                display: inline-block;
+                background: url("../img/rs-product-sprite.png")  no-repeat;
+                font-size:0;
+            }
+
+            &.aa {
+                .rs-product {
+                    background-position: 0 -3px;
+                    &:hover {
+                        background-position: 0 -106px;
+                    }
+                }
+            }
+            &.ac {
+                .rs-product {
+                    height: 102px;
+                    width: 102px;
+                    background-position: -102px -4px;
+                    &:hover {
+                        background-position: -102px -106px;
+                    }
+                }
+            }
+            &.ta {
+                .rs-product {
+                    background-position: -205px -4px;
+                    &:hover {
+                        background-position: -205px -105px;
+                    }
+                }
+            }
+            &.rmc {
+                .rs-product {
+                    background-position: -307px -3px;
+                    &:hover {
+                        background-position: -307px -105px;
+                    }
+                }
+            }
         }
     }
 
