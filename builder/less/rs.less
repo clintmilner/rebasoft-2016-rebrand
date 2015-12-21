@@ -9,18 +9,30 @@ body {
     #topNav {
         background: #49494d;
         height: 76px;
-        border-bottom: 2px solid @rs-white;
+        //border-bottom: 2px solid @rs-white;
+
+        .navbar-toggle {
+            .icon-bar {
+                border: 1px solid @rs-white;
+            }
+
+        }
 
         #navbar {
             height: 100%;
+            //border-bottom: 2px solid @rs-white;
 
             .navbar-nav {
+                //border-bottom: 2px solid @rs-white;
                 li {
                     &.active {
                         border-bottom: 2px solid @rs-green;
                     }
                     &:hover {
                         border-bottom: 2px solid @rs-green;
+                    }
+                    &.open {
+                        background: darken( @rs-dk-grey, 5%);
                     }
                 }
                 a {
@@ -33,10 +45,43 @@ body {
                 }
             }
 
+            .dropdown-menu {
+                padding: 0;
+                background: @rs-dk-grey;
+                li {
+                    &:hover {
+                        border-bottom: none;
+                    }
+                    a {
+                        padding: 1em;
+                    }
+                    &.active {
+                        border-bottom: none;
+                        a {
+                            background: @rs-green;
+                            color: @rs-white;
+                        }
+                    }
+
+
+                }
+
+
+            }
+
             .navbar-brand {
                 margin-top: 3px;
             }
+
+            &.navbar-collapse {
+                background: @rs-dk-grey;
+            }
         }
+
+        .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+            background-color: darken( @rs-dk-grey, 2%);
+        }
+
     }
     #rs-cta {
         .item {

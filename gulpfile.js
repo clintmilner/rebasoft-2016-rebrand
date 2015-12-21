@@ -19,7 +19,7 @@ var jsTarget = 'static/js';
 
 var bsLess = [ 'builder/less/*.less' ],
     //bsJS = [ 'builder/js/tooltip.js', 'builder/js/*.js' ]; // tooltip.js needs to be loaded first
-    bsJS = [ 'builder/js/collapse.js', 'builder/js/carousel.js', 'builder/js/rs-scripts.js' ]; // maybe just add the stuff we're using...
+    bsJS = [ 'builder/js/dropdown.js', 'builder/js/collapse.js', 'builder/js/carousel.js', 'builder/js/rs-scripts.js' ]; // maybe just add the stuff we're using...
 
     gulp.task('build-less', function() {
         gulp.src(masterLess)
@@ -37,7 +37,7 @@ var bsLess = [ 'builder/less/*.less' ],
     gulp.task( 'build-js', function(){
         gulp.src( bsJS )
             .pipe( concat( 'scripts.js' ) )
-
+            //.pipe( uglify() )
             .pipe( gulp.dest( jsTarget ) );
 
         console.log( 'Finished compiling Bootstrap JS' );

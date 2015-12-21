@@ -1455,13 +1455,20 @@ td.visible-print,th.visible-print{display:table-cell!important}
 .btn-default{color:#5a6174;background:#dbdbdb;border-color:#d6d6d6}
 .btn-default:active,.btn-default:focus,.btn-default:hover{background:#e0e0e0}
 body{font-family:latoregular,Helvetica,Arial,sans-serif}
-body #topNav{background:#49494d;height:76px;border-bottom:2px solid #f1f1f1}
+body #topNav{background:#49494d;height:76px}
+body #topNav #navbar .navbar-nav a:active,body #topNav #navbar .navbar-nav a:focus,body #topNav #navbar .navbar-nav a:hover,body #topNav #navbar .navbar-nav li.open{background:#3d3d40}
+body #topNav .navbar-toggle .icon-bar{border:1px solid #f1f1f1}
 body #topNav #navbar{height:100%}
 body #topNav #navbar .navbar-nav li.active,body #topNav #navbar .navbar-nav li:hover{border-bottom:2px solid #9dc63f}
-body #div-1,body #div-rs-info,body #div-rs-twitter{border-bottom:2px solid #f1f1f1}
+body #topNav #navbar .dropdown-menu li.active,body #topNav #navbar .dropdown-menu li:hover{border-bottom:none}
 body #topNav #navbar .navbar-nav a{padding-top:40px;color:#f1f1f1;outline-color:#55555a}
-body #topNav #navbar .navbar-nav a:active,body #topNav #navbar .navbar-nav a:focus,body #topNav #navbar .navbar-nav a:hover{background:#3d3d40}
+body #topNav #navbar .dropdown-menu{padding:0;background:#49494d}
+body #topNav #navbar .dropdown-menu li a{padding:1em}
+body #div-1,body #div-rs-info,body #div-rs-twitter{border-bottom:2px solid #f1f1f1}
+body #topNav #navbar .dropdown-menu li.active a{background:#9dc63f;color:#f1f1f1}
 body #topNav #navbar .navbar-brand{margin-top:3px}
+body #topNav #navbar.navbar-collapse{background:#49494d}
+body #topNav .nav .open>a,body #topNav .nav .open>a:focus,body #topNav .nav .open>a:hover{background-color:#444448}
 body #rs-cta .item{height:311px;width:auto}
 @media (min-width:768px){body #rs-cta .item{height:420px}
 }
