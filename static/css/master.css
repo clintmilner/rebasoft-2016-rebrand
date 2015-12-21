@@ -1493,7 +1493,7 @@ body #rs-cta .carousel-caption p{font-size:1.3em}
 @media (min-width:992px){body #rs-cta .carousel-caption{bottom:5%;left:5%}
 body #rs-cta .carousel-caption p{font-size:1.8em}
 }
-body #div-1{background:url(../img/network.svg) 0 25% #dbdbdb;background-size:cover;height:185px;border-top:2px solid #f1f1f1;border-bottom:2px solid #f1f1f1}
+body #div-1{background:url(../img/network.svg) 0 -15% fixed #dbdbdb;background-size:cover;height:185px;border-top:2px solid #f1f1f1;border-bottom:2px solid #f1f1f1}
 body #div-1 .btn{padding:10px 5px}
 body #div-1 h3{font-size:1.5em;margin-top:1%}
 @media (min-width:768px){body #div-1 .btn{margin-top:40%;font-size:1.1em}
