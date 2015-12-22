@@ -84,6 +84,7 @@ body {
 
     }
     #rs-cta {
+        margin-top: 75px;
         .item {
             height:311px;
 
@@ -582,6 +583,166 @@ body {
         .tagline {
             font-family: @rmc-headline-bold;
             text-transform: uppercase;
+        }
+    }
+
+    #rs-sub-header {
+        margin-top: 75px;
+        height: 160px;
+        background: url( "../img/network.svg" ) @rs-lt-grey 80% -20% fixed repeat;
+        background-size: 60%;
+
+        h1 {
+            font-size: 3em;
+            margin-top: 100px;
+        }
+    }
+
+    #rs-main-content-top {
+        background: #fff url( "../img/nodes.svg" ) 0 -125% fixed;
+        background-size: 110%;
+        border-top: 2px solid @rs-lt-grey;
+        padding: 2em 0;
+
+        h2 {
+            font-family:@rmc-headline-bold;
+            color: @rs-green;
+            font-size: 1.6em;
+        }
+        P {
+            font-size: 1.4em;
+        }
+
+        .btn-cta-xl {
+            font-size: 1.5em;
+            margin-top: 2em;
+            padding: 1em 3em;
+        }
+
+        .contact-form {
+            background: @rs-green;
+
+            h3 {
+                text-align: center;
+                color: @rs-white;
+                margin: 1em 0;
+            }
+            form {
+                label {
+                    color: @rs-white;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                }
+                button {
+                    margin: 1em 0;
+                }
+            }
+
+
+
+        }
+    }
+
+    #div-rs-techinfo {
+        background: @rs-dk-grey;
+        height: 200px;
+
+        @media (min-width: @screen-sm-min) {
+            height: 110px;
+        }
+
+        h2 {
+            color: @rs-white;
+
+            /* Small devices (tablets, 768px and up) */
+            @media (min-width: @screen-sm-min) {
+                line-height:1em;
+                margin-top: 2em;
+            }
+
+            /* Large devices (large desktops, 1200px and up) */
+            @media (min-width: @screen-lg-min) {
+                line-height:3em;
+            }
+        }
+        .btn {
+            /* Small devices (tablets, 768px and up) */
+            @media (min-width: @screen-sm-min) {
+                font-size: .8em;
+                margin-top: 2em;
+            }
+
+            /* Medium devices (desktops, 992px and up) */
+            @media (min-width: @screen-md-min) {
+                font-size: 1.1em;
+                margin-top: 1em;
+            }
+
+            /* Large devices (large desktops, 1200px and up) */
+            @media (min-width: @screen-lg-min) {
+                font-size: 1.5em;
+                margin-top: .9em;
+            }
+        }
+
+    }
+
+    #rs-main-content-bottom {
+        padding: 4em 0;
+        h2 {
+            font-family: @rmc-headline-light;
+            color: @rs-green;
+            font-size: 2.3em;
+        }
+        table {
+            text-align: center;
+            th {
+                font-family: @rmc-headline-light;
+                color: @rs-white;
+                background: @rs-green;
+                text-align: center;
+                text-transform: uppercase;
+                &:first-child {
+                    text-align: left;
+                }
+            }
+            td {
+                vertical-align: middle;
+                text-align: center;
+                &:first-child {
+                    text-align: left;
+                }
+
+                .glyphicon {
+                    font-size: 1.5em;
+
+                    &-remove {
+                        color: @rs-red;
+                    }
+                    &-ok {
+                        color: @rs-green;
+                    }
+                }
+            }
+        }
+        .scenarios {
+            background: @rs-lt-grey;
+            color: @rs-dk-grey;
+            font-size: 1.3em;
+            padding: 1.5em;
+
+            p {
+                margin: 1em 0 2em 0;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            .task {
+                color: @rs-blue;
+                text-transform: uppercase;
+            }
         }
     }
 
