@@ -176,18 +176,9 @@ $case_study_page = get_field( 'case_study_page' );
                 <img src="<?php bloginfo('template_directory'); ?>/assets/img/twitter-logo.svg" class="svg pull-right" height="50px" />
             </div>
             <div class="col-xs-10">
-
-
                 <?php if ( is_active_sidebar( 'div-rs-twitter-home' ) ) : ?>
-                    <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-                        <?php dynamic_sidebar( 'div-rs-twitter-home' ); ?>
-                    </div><!-- #primary-sidebar -->
+                    <?php dynamic_sidebar( 'div-rs-twitter-home' ); ?>
                 <?php endif; ?>
-
-
-<!--                <p>"Rebasoft is Hiring! If you're a Java Developer, please get in touch! - <a href="http://reba.io/javadev">http://reba.io/javadev</a>" </p>-->
-<!--                <span class="handle pull-left"><a href="http://twitter.com/rebasoft">@rebasoft</a> </span>-->
-<!--                <span class="date pull-right">November 19 2015</span>-->
             </div>
         </div>
 
