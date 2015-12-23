@@ -23,44 +23,19 @@
         <div id="div-rs-footer" class="row">
             <div class="col-lg-3 col-sm-6 col-xs-6">
                 <h2>Products</h2>
-                <ul>
-                    <li><a href="#">Application Auditor</a></li>
-                    <li><a href="#">Auditor Core</a></li>
-                    <li><a href="#">Threat Auditor</a></li>
-                    <li><a href="#">RMC</a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'theme_location' => 'products' ) ); ?>
             </div>
             <div class="col-lg-3 col-sm-6 col-xs-6">
                 <h2>Downloads</h2>
-                <ul>
-                    <li><a href="#">Application Auditor</a></li>
-                    <li><a href="#">Auditor Core</a></li>
-                    <li><a href="#">Threat Auditor</a></li>
-                    <li><a href="#">RMC</a></li>
-                    <li><a href="#">Rebasoft Appliance</a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'theme_location' => 'downloads' ) ); ?>
             </div>
             <div class="col-lg-3 col-sm-6 col-xs-6">
                 <h2>Corporate</h2>
-                <ul>
-                    <li><a href="#">Information</a></li>
-                    <li><a href="#">Our Customers</a></li>
-                    <li><a href="#">Partners</a></li>
-                    <li><a href="#">Leadership Team</a></li>
-                    <li><a href="#">Corporate Responsibility</a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'theme_location' => 'corporate' ) ); ?>
             </div>
             <div class="col-lg-3 col-sm-6 col-xs-6">
                 <h2>Connect</h2>
-                <ul>
-                    <li><a href="#">Support Channel</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Jobs at Rebasoft</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'theme_location' => 'connect' ) ); ?>
             </div>
         </div>
 
@@ -70,7 +45,7 @@
                 <span class="tagline"><?php bloginfo( 'description' ); ?></span>
             </div>
             <div class="col-sm-6">
-                <p class="copyright pull-right">Copyright &copy; 2015 All Rights Reserved</p>
+                <p class="copyright pull-right">Copyright &copy; <?php echo date("Y"); ?> All Rights Reserved</p>
             </div>
         </div>
 

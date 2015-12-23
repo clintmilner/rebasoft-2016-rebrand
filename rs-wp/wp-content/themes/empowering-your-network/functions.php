@@ -45,6 +45,10 @@ function empowering_your_network_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'empowering-your-network' ),
+		'products' => esc_html__( 'Products', 'empowering-your-network' ),
+		'downloads' => esc_html__( 'Downloads', 'empowering-your-network' ),
+		'corporate' => esc_html__( 'Corporate', 'empowering-your-network' ),
+		'connect' => esc_html__( 'Connect', 'empowering-your-network' ),
 	) );
 
 	// Register custom navigation walker
