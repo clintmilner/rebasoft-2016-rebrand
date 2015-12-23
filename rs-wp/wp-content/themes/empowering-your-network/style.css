@@ -1819,7 +1819,7 @@ body #topNav #navbar .navbar-nav li:hover,
 body #topNav #navbar .current-menu-parent
 {border-bottom:2px solid #9dc63f}
 body #topNav #navbar .dropdown-menu li.active,body #topNav #navbar .dropdown-menu li:hover{border-bottom:none}
-body #topNav #navbar .navbar-nav a{padding-top:40px;color:#f1f1f1;outline-color:#55555a}
+body #topNav #navbar .navbar-nav a{padding-top:40px;color:#f1f1f1;outline-color:#55555a;background: #49494d;}
 body #topNav #navbar .dropdown-menu{padding:0;background:#49494d}
 body #topNav #navbar .dropdown-menu li a{padding:1em}
 body #div-1,body #div-rs-info,body #div-rs-twitter{border-bottom:2px solid #f1f1f1}

@@ -48,7 +48,7 @@
                     'theme_location' => 'primary',
                     'container' => 'div',
                     'container_id' => 'navbar',
-                    'container-class' => 'collapse navbar-collapse',
+                    'container-class' => 'collapse navbar-collapse collapse in',
                     'menu_class' => 'nav navbar-nav navbar-right',
                     'walker' => new wp_bootstrap_navwalker()
                 ));
