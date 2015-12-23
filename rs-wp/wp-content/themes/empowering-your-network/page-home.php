@@ -185,39 +185,30 @@ $case_study_page = get_field( 'case_study_page' );
         <div id="div-rs-news-and-blog" class="row" data-type="background" data-speed="2">
             <div class="col-md-5 col-md-offset-1 col-sm-12 rs-news">
                 <h1>Rebasoft News</h1>
-                <section>
-                    <h2>Introducing the Rebasoft Managment Console</h2>
-                    <p><span class="date">30th September 2015</span> - Rebasoft today introduces a new component – the Rebasoft Management Console (RMC) which will become the main interface for configuring, deploying and reporting on Rebasoft components over the coming releases. </p>
-                    <a href="#" class="btn btn-success btn-sm">Read More</a>
-                </section>
-                <section>
-                    <h2>Version 2.8 of Auditor Core and Application Auditor Released</h2>
-                    <p><span class="date">7th July 2015</span> - UK based Rebasoft today announced the release of the 2.8 version of Auditor Core and Application Auditor. Together these releases enhance the capabilities around Threat mitigation and network operations. </p>
-                    <a href="#" class="btn btn-success btn-sm">Read More</a>
-                </section>
+
+                <?php $news = new WP_Query( array( 'post_type' => 'rebasoft_news', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => 2 ) ); ?>
+
+                <?php while( $news -> have_posts() ) : $news -> the_post(); ?>
+                    <section>
+                        <h2><?php the_title() ?></h2>
+                        <p><span class="date"><?php echo get_the_date('Y-m-d') ?></span> - <?php echo get_field( 'post_text_blurb' ) ?></p>
+                        <a href="<?php the_permalink() ?>" class="btn btn-success btn-sm">Read More</a>
+                    </section>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
             <div class="col-md-5 col-sm-12 rs-blogs">
                 <h1>Recent Blog Posts</h1>
-                <section>
-                    <h2><a href="#">Hotel Chain Malware Incidents on the Rise</a> </h2>
-                    <p class="date">30th September 2015</p>
-                </section>
-                <section>
-                    <h2><a href="#">Hotel Chain Malware Incidents on the Rise</a> </h2>
-                    <p class="date">30th September 2015</p>
-                </section>
-                <section>
-                    <h2><a href="#">Hotel Chain Malware Incidents on the Rise</a> </h2>
-                    <p class="date">30th September 2015</p>
-                </section>
-                <section>
-                    <h2><a href="#">Hotel Chain Malware Incidents on the Rise</a> </h2>
-                    <p class="date">30th September 2015</p>
-                </section>
-                <section>
-                    <h2><a href="#">Hotel Chain Malware Incidents on the Rise</a> </h2>
-                    <p class="date">30th September 2015</p>
-                </section>
+
+                <?php $news = new WP_Query( array( 'post_type' => 'rebasoft_blog', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => 5 ) ); ?>
+
+                <?php while( $news -> have_posts() ) : $news -> the_post(); ?>
+                    <section>
+                        <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a> </h2>
+                        <p class="date"><?php echo get_the_date('Y-m-d') ?></p>
+                    </section>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
 
             </div>
         </div>
