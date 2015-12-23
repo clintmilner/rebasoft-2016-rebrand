@@ -26,6 +26,11 @@ $opt_in_desc = get_field( 'opt-in_desc' );
 $opt_in_button_text = get_field( 'opt_in_button_text' );
 $opt_in_button_link= get_field( 'opt_in_button_link' );
 
+$case_study_headline = get_field( 'case_study_headline' );
+$case_study_intro = get_field( 'case_study_intro' );
+$case_study_button_text = get_field( 'case_study_button_text' );
+$case_study_page = get_field( 'case_study_page' );
+
 
 // Rebasoft Products
 
@@ -135,45 +140,34 @@ $opt_in_button_link= get_field( 'opt_in_button_link' );
         </div>
 
         <div id="div-rs-casestudies" class="row" data-type="background" data-speed="3">
-            <div class="col-sm-11"><h1>Clients &amp; Case Studies</h1></div>
+            <div class="col-sm-11"><h1><?php echo $case_study_headline; ?></h1></div>
             <div class="col-sm-12 col-md-5 col-md-offset-1">
-                <section class="row">
-                    <div class="col-sm-4 logo">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/client-logos/smyths-logo.png" width="100%" />
-                    </div>
-                    <div class="col-sm-8 desc">
-                        <h2>Smyths Toys</h2>
-                        <p>Smyths Toys chose Rebasoft to help manage and secure their entire retail operation</p>
-                        <a href="#" class="btn btn-success pull-right">Read More</a>
-                    </div>
-                </section>
-                <section class="row">
-                    <div class="col-sm-4 logo">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/client-logos/fastcom-logo.png" width="100%" />
-                    </div>
-                    <div class="col-sm-8 desc">
-                        <h2>Fastcom</h2>
-                        <p>Rebasoft provides improved SLA delivery and proactive performance analytics to Fastcom Telecoms.</p>
-                        <a href="#" class="btn btn-success pull-right">Read More</a>
-                    </div>
-                </section>
-                <section class="row">
-                    <div class="col-sm-4 logo">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/client-logos/university-of-glasgow-logo.png" width="100%" />
-                    </div>
-                    <div class="col-sm-8 desc">
-                        <h2>University of Glasgow</h2>
-                        <p>Data intelligence to help University pinpoint issues with minimal manpower.</p>
-                        <a href="#" class="btn btn-success pull-right">Read More</a>
-                    </div>
-                </section>
+
+                <?php
+                    $clients = new WP_Query( array( 'post_type' => 'case_study', 'orderby' => 'post_id', 'order' => 'ASC' ) );
+                ?>
+
+                <?php while( $clients -> have_posts() ) : $clients -> the_post(); ?>
+
+                    <?php if( 'true' == get_field('feature_on_home_page') ) : ?>
+                        <section class="row">
+                            <div class="col-sm-4 logo">
+                                <img src="<?php the_field( 'customer_logo' ); ?>" width="100%" />
+                            </div>
+                            <div class="col-sm-8 desc">
+                                <h2><?php the_field( 'customer_name' ); ?></h2>
+                                <p><?php the_field( 'case_study_blurb_short' ); ?></p>
+                                <a href="<?php the_field( 'case_study_page' ); ?>" class="btn btn-success pull-right">Read More</a>
+                            </div>
+                        </section>
+                    <?php endif; ?>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+
             </div>
             <div class="col-sm-12 col-md-5">
-                <p>Here’s some text talking about how great our customers are, and how Rebasoft has helped them keep their networks safe by identifying threats, as well as helping network administrators audit their networks to keep costs low.</p>
-                <p>Here’s some text talking about how great our customers are, and how Rebasoft has helped them keep their networks safe by identifying threats, as well as helping network administrators audit their networks to keep costs low.</p>
-                <p>Here’s some text talking about how great our customers are, and how Rebasoft has helped them keep their networks safe by identifying threats, as well as helping network administrators audit their networks to keep costs low.</p>
-                <p>Here’s some text talking about how great our customers are, and how Rebasoft has helped them keep their networks safe by identifying threats, as well as helping network administrators audit their networks to keep costs low.</p>
-                <a href="#" class="btn btn-cta btn-cta-md btn-default btn-block">View all case studies</a>
+                <p><?php echo $case_study_intro; ?></p>
+                <a href="<?php echo $case_study_page; ?>" class="btn btn-cta btn-cta-md btn-default btn-block"><?php echo $case_study_button_text; ?></a>
             </div>
         </div>
 
