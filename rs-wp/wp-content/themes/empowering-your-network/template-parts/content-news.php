@@ -4,6 +4,10 @@
  * User: clint
  * Date: 23/12/2015
  * Time: 15:06
+ *
+ * Template part for displaying the News and Blog Posts
+ *
+ * @package Rebasoft
  */
 
 ?>

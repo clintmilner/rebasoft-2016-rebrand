@@ -4,6 +4,10 @@
  * User: clint
  * Date: 23/12/2015
  * Time: 15:05
+ *
+ * Template part for displaying the last tweet from Twitter's API
+ *
+ * @package Rebasoft
  */
 
 ?>

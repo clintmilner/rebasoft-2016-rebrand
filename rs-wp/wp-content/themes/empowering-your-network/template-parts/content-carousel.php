@@ -1,5 +1,10 @@
 <?php
 /**
+ * Created by IntelliJ IDEA.
+ * User: clint
+ * Date: 23/12/2015
+ * Time: 03:11
+ *
  * Template part for displaying Carousel
  *
  * @package Rebasoft
