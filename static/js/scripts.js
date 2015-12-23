@@ -35,6 +35,7 @@
   }
 
   function clearMenus(e) {
+    console.log( 'clearMenus' );
     if (e && e.which === 3) return
     $(backdrop).remove()
     $(toggle).each(function () {
@@ -56,6 +57,7 @@
   }
 
   Dropdown.prototype.toggle = function (e) {
+    console.log( 'Dropdown.prototype' );
     var $this = $(this)
 
     if ($this.is('.disabled, :disabled')) return
@@ -157,7 +159,7 @@
 
   $(document)
     .on('click.bs.dropdown.data-api', clearMenus)
-    .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
+    .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { console.log( 'click.bs.dropdown.data-api' ); e.stopPropagation() })
     .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
     .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
     .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
@@ -209,6 +211,7 @@
   }
 
   Collapse.prototype.show = function () {
+    console.log( 'Collapse.prototype.show ');
     if (this.transitioning || this.$element.hasClass('in')) return
 
     var activesData
@@ -260,6 +263,7 @@
   }
 
   Collapse.prototype.hide = function () {
+    console.log( 'collapse.prototype.hide' );
     if (this.transitioning || !this.$element.hasClass('in')) return
 
     var startEvent = $.Event('hide.bs.collapse')
