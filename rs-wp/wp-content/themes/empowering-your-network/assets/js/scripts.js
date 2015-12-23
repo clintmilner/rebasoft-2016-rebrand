@@ -653,8 +653,6 @@ $(function () {
 
             // Move the background
             $bgobj.css({ backgroundPosition: coords });
-            console.log( $bgobj.data('speed') );
-            console.log( coords );
         });
     });
 });
