@@ -1963,6 +1963,15 @@ body #rs-main-content-bottom table td{vertical-align:middle;text-align:center}
 body #rs-main-content-bottom table td .glyphicon{font-size:1.5em}
 body #rs-main-content-bottom table td .glyphicon-remove{color:#c52133}
 body #rs-main-content-bottom table td .glyphicon-ok{color:#9dc63f}
+
+body .rs-main-content table{text-align:center}
+body .rs-main-content table th{color:#f1f1f1;background:#9dc63f;text-align:center;text-transform:uppercase}
+body .rs-main-content table td:first-child,body #rs-main-content-bottom table th:first-child{text-align:left}
+body .rs-main-content table td{vertical-align:middle;text-align:center}
+body .rs-main-content table td .glyphicon{font-size:1.5em}
+body .rs-main-content table td .glyphicon-remove{color:#c52133}
+body .rs-main-content table td .glyphicon-ok{color:#9dc63f}
+
 body #rs-main-content-bottom .scenarios{background:#dbdbdb;color:#49494d;font-size:1.3em;padding:1.5em}
 body #rs-main-content-bottom .scenarios p{margin:1em 0 2em}
 body #rs-main-content-bottom .scenarios p:first-child{margin-top:0}

@@ -17,7 +17,7 @@
     <div class="col-md-5 col-md-offset-1 col-sm-12 rs-news">
         <h1>Rebasoft News</h1>
 
-        <?php $news = new WP_Query( array( 'post_type' => 'rebasoft_news', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => 2 ) ); ?>
+        <?php $news = new WP_Query( array( 'post_type' => 'news', 'orderby' => 'post_id', 'order' => 'DESC', 'posts_per_page' => 2 ) ); ?>
 
         <?php while( $news -> have_posts() ) : $news -> the_post(); ?>
             <section>
@@ -31,7 +31,7 @@
     <div class="col-md-5 col-sm-12 rs-blogs">
         <h1>Recent Blog Posts</h1>
 
-        <?php $news = new WP_Query( array( 'post_type' => 'rebasoft_blog', 'orderby' => 'post_id', 'order' => 'ASC', 'posts_per_page' => 5 ) ); ?>
+        <?php $news = new WP_Query( array( 'post_type' => 'blog', 'orderby' => 'post_id', 'order' => 'DESC', 'posts_per_page' => 5 ) ); ?>
 
         <?php while( $news -> have_posts() ) : $news -> the_post(); ?>
             <section>
