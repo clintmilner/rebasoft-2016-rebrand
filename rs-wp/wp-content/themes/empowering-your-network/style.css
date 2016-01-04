@@ -1934,8 +1934,14 @@ body #rs-main-content-top h2{color:#9dc63f;font-size:1.6em}
 body #rs-main-content-bottom h2,body #rs-main-content-bottom table th{font-family:nexa_lightregular,Helvetica,Arial,sans-serif}
 body #rs-main-content-top P{font-size:1.4em}
 body #rs-main-content-top .btn-cta-xl{font-size:1.5em;margin-top:2em;padding:1em 3em}
+body #rs-main-content-top .contact-form li{list-style: none;}
 body #rs-main-content-top .contact-form h3{text-align:center;color:#f1f1f1;margin:1em 0}
 body #rs-main-content-top .contact-form form label{color:#f1f1f1;text-transform:uppercase;font-weight:400}
+body #rs-main-content-top .contact-form form .wpcf7-textarea{height: 50px; width: 95%;}
+body #rs-main-content-top .contact-form form label .wpcf7-quiz-label{color:#49494d;text-transform:lowercase;}
+body #rs-main-content-top .contact-form form label .wpcf7-quiz {color:#49494d;}
+body #rs-main-content-top .contact-form form .wpcf7-response-output {background: #f1f1f1;}
+body #rs-main-content-top .contact-form form .wpcf7-validation-errors {border-color: #c52133;}
 body #rs-main-content-top .contact-form form button{margin:1em 0}
 body #div-rs-techinfo{background:#49494d;height:200px}
 body #div-rs-techinfo h2{color:#f1f1f1}

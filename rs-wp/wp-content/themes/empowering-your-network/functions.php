@@ -117,6 +117,13 @@ function empowering_your_network_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'		   => 'Sidebar Contact Form',
+		'id'            => 'rs-sidebar-contact-form',
+		'before_title'  => '<h3 class="h1">',
+		'after_title'   => '</h3>'
+	));
+
+	register_sidebar( array(
 		'name'          => 'Home Page Twitter Feed',
 		'id'            => 'div-rs-twitter-home',
 //		'before_widget' => '<div>',
