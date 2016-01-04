@@ -1919,7 +1919,7 @@ body #div-rs-news-and-blog section p{font-size:1.1em}
 body #div-rs-news-and-blog section p .date{text-transform:uppercase;color:#7a95ad}
 body #rs-main-content-top article p .date{text-transform:uppercase;color:#7a95ad}
 body #div-rs-news-and-blog .rs-blogs section h2 a{color:#49494d}
-body #div-rs-footer a:active,body #div-rs-footer a:focus,body #div-rs-footer a:hover,body #div-rs-news-and-blog .rs-blogs section h2 a:hover{color:#9dc63f}
+body #div-rs-footer a:active,body #div-rs-footer a:focus,body #div-rs-footer a:hover, body #div-rs-footer li.current_page_item a, body #div-rs-news-and-blog .rs-blogs section h2 a:hover{color:#9dc63f}
 body #div-rs-phone{height:100px;text-transform:uppercase;font-weight:400;font-size:2.5em;color:#f1f1f1}
 body #div-rs-phone div{padding-top:.7em;text-align:right}
 body #div-rs-phone div .phone-label .phone-number,body #div-rs-sub-footer .tagline,body #rs-main-content-top h2{font-family:nexa_boldregular,Helvetica,Arial,sans-serif}
