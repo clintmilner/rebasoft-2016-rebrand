@@ -1842,6 +1842,8 @@ body #rs-cta.carousel.fade .item.active{opacity:1;transition:opacity ease-in-out
 body #rs-cta img{width:100%;position:absolute;top:-20%}
 body #rs-cta .svg-nodes{position:absolute;z-index:99}
 body #rs-cta .carousel-caption{z-index:999;width:50%}
+body #rs-cta .carousel-caption a {color: #f1f1f1;}
+body #rs-cta .carousel-caption a:hover {color: #f1f1f1; text-decoration: none;}
 body #rs-cta .carousel-caption p{font-size:2em;font-family:nexa_boldregular,Helvetica,Arial,sans-serif;text-transform:uppercase;margin-bottom:0;text-shadow:none;padding:1px .5em;display:table}
 body #div-rs-news-and-blog .rs-blogs section h2 a,body #div-rs-phone div .phone-label{font-family:nexa_lightregular,Helvetica,Arial,sans-serif}
 body #rs-cta .carousel-caption p.carousel-logo{font-size:1em;height:4em;display:block;position:relative}
@@ -1938,7 +1940,10 @@ body #rs-main-content-top .btn-cta-xl{font-size:1.5em;margin-top:2em;padding:1em
 body #rs-main-content-top .contact-form li{list-style: none;}
 body #rs-main-content-top .contact-form h3{text-align:center;color:#f1f1f1;margin:1em 0}
 body #rs-main-content-top .contact-form form label{color:#f1f1f1;text-transform:uppercase;font-weight:400}
-body #rs-main-content-top .contact-form form .wpcf7-textarea{height: 50px; width: 95%;}
+body #rs-main-content-top .contact-form form input[type=text],
+body #rs-main-content-top .contact-form form input[type=email],
+body #rs-main-content-top .contact-form form input[type=tel] {width: 100%;}
+body #rs-main-content-top .contact-form form .wpcf7-textarea{height: 50px; width: 100%; border: none;}
 body #rs-main-content-top .contact-form form label .wpcf7-quiz-label{color:#49494d;text-transform:lowercase;}
 body #rs-main-content-top .contact-form form label .wpcf7-quiz {color:#49494d;}
 body #rs-main-content-top .contact-form form .wpcf7-response-output {background: #f1f1f1;}
@@ -1982,3 +1987,4 @@ body #rs-main-content-bottom .scenarios .task{color:#7a95ad;text-transform:upper
 
 body .rs-feed #rs-main-content-top article {margin: 1em 0 0; padding: 0 0 1em 0; border-bottom:1px solid #dbdbdb}
 body .rs-feed #rs-main-content-top p {font-size: 1.2em;}
+body .rs-feed #rs-main-content-top .logo img {margin-top: 50%;}

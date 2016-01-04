@@ -43,9 +43,9 @@
                 <img class="first-slide" src="<?php the_field( 'slider_image' ); ?>" alt="">
                 <div class="container">
                     <div class="carousel-caption ac">
-                        <p class="carousel-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/img/rebasoft-logo.svg" height="50px"></p>
+                        <a href="<?php the_field( 'page_url' ); ?>"><p class="carousel-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/img/rebasoft-logo.svg" height="50px"></p>
                         <p class="carousel-tagline"><?php the_field( 'slider_tagline' ); ?></p>
-                        <p class="carousel-product"><?php the_field( 'product_name' ) ?></p>
+                        <p class="carousel-product"><?php the_field( 'product_name' ) ?></p></a>
                     </div>
                 </div>
             </div>

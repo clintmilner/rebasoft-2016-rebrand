@@ -35,7 +35,7 @@ $case_study_page = get_field( 'case_study_page' );
                     <div class="col-sm-8 desc">
                         <h2><?php the_field( 'customer_name' ); ?></h2>
                         <p><?php the_field( 'case_study_blurb_short' ); ?></p>
-                        <a href="<?php the_field( 'case_study_page' ); ?>" class="btn btn-success pull-right">Read More</a>
+                        <a href="<?php the_field( 'case_study_page' ); ?>#<?php echo strtolower( str_replace(' ', '-', get_field( 'customer_name' ) ) ); ?>" class="btn btn-success pull-right">Read More</a>
                     </div>
                 </section>
             <?php endif; ?>
