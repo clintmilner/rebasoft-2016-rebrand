@@ -1915,6 +1915,7 @@ body #div-rs-news-and-blog h1{font-size:2.2em}
 body #div-rs-news-and-blog section{margin:3em 0}
 body #div-rs-news-and-blog section p{font-size:1.1em}
 body #div-rs-news-and-blog section p .date{text-transform:uppercase;color:#7a95ad}
+body #rs-main-content-top article p .date{text-transform:uppercase;color:#7a95ad}
 body #div-rs-news-and-blog .rs-blogs section h2 a{color:#49494d}
 body #div-rs-footer a:active,body #div-rs-footer a:focus,body #div-rs-footer a:hover,body #div-rs-news-and-blog .rs-blogs section h2 a:hover{color:#9dc63f}
 body #div-rs-phone{height:100px;text-transform:uppercase;font-weight:400;font-size:2.5em;color:#f1f1f1}
@@ -1976,3 +1977,8 @@ body #rs-main-content-bottom .scenarios{background:#dbdbdb;color:#49494d;font-si
 body #rs-main-content-bottom .scenarios p{margin:1em 0 2em}
 body #rs-main-content-bottom .scenarios p:first-child{margin-top:0}
 body #rs-main-content-bottom .scenarios .task{color:#7a95ad;text-transform:uppercase}
+
+
+
+body .rs-feed #rs-main-content-top article {margin: 1em 0 0; padding: 0 0 1em 0; border-bottom:1px solid #dbdbdb}
+body .rs-feed #rs-main-content-top p {font-size: 1.2em;}

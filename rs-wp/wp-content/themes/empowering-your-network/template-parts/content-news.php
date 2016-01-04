@@ -9,7 +9,7 @@
  *
  * @package Rebasoft
  */
-
+$newsfeed_button_url = get_field( 'newsfeed_button_url' );
 ?>
 
 
@@ -22,7 +22,7 @@
         <?php while( $news -> have_posts() ) : $news -> the_post(); ?>
             <section>
                 <h2><?php the_title() ?></h2>
-                <p><span class="date"><?php echo get_the_date('Y-m-d') ?></span> - <?php echo get_field( 'post_text_blurb' ) ?></p>
+                <p><span class="date"><?php echo get_the_date('Y-m-d') ?></span>  <?php echo get_field( 'post_text_blurb' ) ?></p>
                 <a href="<?php the_permalink() ?>" class="btn btn-success btn-sm">Read More</a>
             </section>
         <?php endwhile; ?>
@@ -31,16 +31,19 @@
     <div class="col-md-5 col-sm-12 rs-blogs">
         <h1>Recent Blog Posts</h1>
 
-        <?php $news = new WP_Query( array( 'post_type' => 'blog', 'orderby' => 'post_id', 'order' => 'DESC', 'posts_per_page' => 5 ) ); ?>
+        <?php $blog = new WP_Query( array( 'post_type' => 'blog', 'orderby' => 'post_id', 'order' => 'DESC', 'posts_per_page' => 5 ) ); ?>
 
-        <?php while( $news -> have_posts() ) : $news -> the_post(); ?>
+        <?php while( $blog -> have_posts() ) : $blog -> the_post(); ?>
             <section>
                 <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a> </h2>
-                <p class="date"><?php echo get_the_date('Y-m-d') ?></p>
+                <p><span class="date"><?php echo get_the_date('Y-m-d') ?></span></p>
             </section>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
 
+    </div>
+    <div class="col-sm-10">
+        <a class="btn btn-cta btn-success pull-right" href="<?php echo $newsfeed_button_url; ?>">View Rebasoft NewsFeed</a>
     </div>
 </div>
 
