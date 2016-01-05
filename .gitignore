@@ -30,6 +30,7 @@ builder/js/.jshintrc
 /rs-wp/wp-content/plugins/index.php
 /rs-wp/wp-content/upgrade
 /rs-wp/wp-content/index.php
+/rs-wp/wp-content/themes/*.zip
 /rs-wp/wp-content/uploads
 /rs-wp/wp-content/themes/index.php
 /rs-wp/wp-config-sample.php
