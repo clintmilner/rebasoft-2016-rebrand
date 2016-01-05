@@ -633,12 +633,15 @@
 
 $(function () {
 
-    console.log('$ loaded');
+    var msg = 'Rebasoft handpicks its team members to ensure the right mix of skills, experience, professionalism and personality to fit our Company’s values and objectives. You have made it this far, so we would love to hear from you. http://rebasoft.net/job-opportunities/';
 
     $('#rs-cta').carousel({
-        interval: 3000
+        interval: 3500
     });
 
+    if (typeof console !== "undefined") {
+        console.info( msg );
+    }
 
     var $window = $(window);
     $( 'div[data-type="background"]' ).each(function(){
