@@ -6,59 +6,29 @@
  *
  * @package Rebasoft
  */
+?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="container-fluid rs-feed">
+		<div id="rs-sub-header" class="row">
+			<div class="col-xs-12">
+				<h1><?php esc_html_e( '404', 'empowering-your-network' ); ?></h1>
+			</div>
+		</div>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'empowering-your-network' ); ?></h1>
-				</header><!-- .page-header -->
+		<div id="rs-main-content-top" class="row rs-main-content rs-team">
+			<div class="col-sm-12 col-md-7">
+				<h2>Oops! That page can't be found</h2>
+				<p>Please use the navigation above or below, <br />ring us on +44(0) 800 779 7322, <br /> tweet us <a href="https://twitter.com/rebasoft" target="_blank">@rebasoft</a> <br/> or the Contact Form on the right to find the information you're looking for.</p>
+				<p>Thanks!</p>
+				<p>The Rebasoft Team</p>
+			</div>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'empowering-your-network' ); ?></p>
+			<?php get_template_part( '/template-parts/content', 'contactform' ); ?>
 
-					<?php
-						get_search_form();
+		</div>
 
-						the_widget( 'WP_Widget_Recent_Posts' );
+		<?php get_footer(); ?>
 
-						// Only show the widget if site has multiple categories.
-						if ( empowering_your_network_categorized_blog() ) :
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'empowering-your-network' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-						endif;
-
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'empowering-your-network' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_footer();
+	</div>
