@@ -29,7 +29,11 @@
 
                 <article class="clearfix team-member" id="<?php echo strtolower( str_replace(' ', '-', get_field( 'customer_name' ) ) ); ?>">
                     <div class="row">
-                        <div class="col-sm-9 desc">
+                        <?php if( get_field('team_member_headshot') ) { ?>
+                            <div class="col-sm-9 desc">
+                        <?php } else { ?>
+                            <div class="col-sm-12 desc">
+                        <?php } ?>
                             <h2><?php the_field( 'team_member_name' ); ?></h2>
                             <h3><?php the_field( 'team_member_title' ); ?>
                                 <?php if( 'yes' == get_field('is_management') ) { ?>
@@ -48,9 +52,12 @@
 <!--                                </a>-->
 <!--                            --><?php //} ?>
                         </div>
-                        <div class="col-sm-3 logo">
-                            this will be a headshot someday...
-                        </div>
+                        <?php if( get_field('team_member_headshot') ) { ?>
+                            <div class="col-sm-3 logo">
+                                <img src="<?php the_field( 'team_member_headshot' ); ?>" width="100%" alt="<?php the_field( 'team_member_name' ); ?>" />
+                            </div>
+                        <?php } ?>
+
                     </div>
                 </article>
             <?php endwhile; ?>
