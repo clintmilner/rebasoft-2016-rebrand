@@ -718,6 +718,7 @@ address,blockquote .small,blockquote footer,blockquote small,dd,dt,pre{line-heig
 .text-primary{color:#337ab7}
 a.text-primary:focus,a.text-primary:hover{color:#286090}
 .text-success{color:#3c763d}
+.rs-text-success{color:#A7CD48;}
 a.text-success:focus,a.text-success:hover{color:#2b542c}
 .text-info{color:#31708f}
 a.text-info:focus,a.text-info:hover{color:#245269}
@@ -1984,7 +1985,8 @@ body #rs-main-content-bottom .scenarios p:first-child{margin-top:0}
 body #rs-main-content-bottom .scenarios .task{color:#7a95ad;text-transform:uppercase}
 
 
-
 body .rs-feed #rs-main-content-top article {margin: 1em 0 0; padding: 0 0 1em 0; border-bottom:1px solid #dbdbdb}
 body .rs-feed #rs-main-content-top p {font-size: 1.2em;}
 body .rs-feed #rs-main-content-top .logo img {margin-top: 50%;}
+
+body  #rs-main-content-top .team-member h3 {margin-top: 0;}
