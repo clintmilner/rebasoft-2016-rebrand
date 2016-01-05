@@ -26,7 +26,7 @@ builder/js/.jshintrc
 /rs-wp/wp-content/plugins/display-latest-tweets/index.php
 /rs-wp/wp-content/plugins/display-latest-tweets/readme.txt
 /rs-wp/wp-content/plugins/display-latest-tweets/screenshot-2.png
-/rs-wp/wp-content/plugins/display-latest-tweets/display-latest-tweets.php
+!/rs-wp/wp-content/plugins/display-latest-tweets/display-latest-tweets.php
 /rs-wp/wp-content/plugins/index.php
 /rs-wp/wp-content/upgrade
 /rs-wp/wp-content/index.php
