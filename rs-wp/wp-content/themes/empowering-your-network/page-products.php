@@ -34,11 +34,7 @@
             <a href="<?php echo get_field( 'download_button_url' ); ?>" class="btn btn-success btn-cta-xl"><?php echo get_field( 'download_button_text' ); ?></a>
         </div>
 
-        <?php if ( is_active_sidebar( 'rs-sidebar-contact-form' ) ) : ?>
-            <div id="primary-sidebar" class="col-sm-12 col-md-3 col-md-offset-1 contact-form primary-sidebar widget-area" role="complementary">
-                <?php dynamic_sidebar( 'rs-sidebar-contact-form' ); ?>
-            </div><!-- #primary-sidebar -->
-        <?php endif; ?>
+        <?php get_template_part( '/template-parts/content', 'contactform' ); ?>
     </div>
 
     <?php if( get_field( 'overview_whitepaper_pdf' ) || get_field( 'technical_whitepaper_pdf' ) )  { ?>
@@ -72,6 +68,37 @@
             <section class="scenarios">
                 <?php echo get_field( 'challenge_data' ); ?>
             </section>
+
+            <?php if( get_field( 'show_case_studies' ) == 'yes' ) { ?>
+                <h2>Paired Case Studies</h2>
+                <p>Real-life examples of how Rebasoft and <?php the_title(); ?> are helping companies to visualise, monitor, and secure their networks.</p>
+                <section class="case-studies">
+                    <?php
+                        $pageTitle = the_title(null, null, false);
+                        $cs = new WP_Query( array( 'post_type' => 'case_study', 'orderby' => 'post_id', 'order' => 'DESC', 'posts_per_page' => 2 ) );
+                    ?>
+
+                    <?php
+                        while( $cs -> have_posts() ) : $cs -> the_post();
+                            $csType = get_field( 'case_study_products_used' );
+                            // here we are looping over every Case Study
+                            // each Case Study has associated Products (AA, AC, RMC, TA)
+                            // if the Case Study matches the page we're on, show that Case Study
+                    ?>
+                            <div class="col-sm-12">
+                            <?php for( $i = 0; $i < count( $csType ); $i++ ) { ?>
+                                <?php if( $csType[$i] == $pageTitle ) { ?>
+                                    <a href="<?php the_field( 'case_study_page' ); ?>#<?php echo strtolower( str_replace(' ', '-', get_field( 'customer_name' ) ) ); ?>" title="Read More">
+                                        <h3><?php echo get_field( 'customer_name' ); ?></h3>
+                                        <p><?php echo get_field( 'case_study_blurb_short' ) ?></p>
+                                    </a>
+                                <?php } ?>
+                            <?php } ?>
+                        </div>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                </section>
+            <?php } ?>
         </div>
     </div>
     <?php get_footer(); ?>

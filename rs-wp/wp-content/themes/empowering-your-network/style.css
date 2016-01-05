@@ -1990,3 +1990,9 @@ body .rs-feed #rs-main-content-top p {font-size: 1.2em;}
 body .rs-feed #rs-main-content-top .logo img {margin-top: 50%;}
 
 body  #rs-main-content-top .team-member h3 {margin-top: 0;}
+
+body #rs-main-content-bottom .case-studies div { border: 1px solid #dbdbdb; margin: .5em 0; }
+body #rs-main-content-bottom .case-studies a { color: #49494d; display: block; }
+body #rs-main-content-bottom .case-studies a:hover { text-decoration: none; }
+body #rs-main-content-bottom .case-studies a h3{ color: #7a95ad; }
+body #rs-main-content-bottom .case-studies a:hover p { text-decoration: underline; }
