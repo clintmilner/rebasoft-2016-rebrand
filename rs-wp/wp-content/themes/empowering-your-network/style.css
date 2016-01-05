@@ -1986,6 +1986,7 @@ body #rs-main-content-bottom .scenarios .task{color:#7a95ad;text-transform:upper
 
 
 body .rs-feed #rs-main-content-top article {margin: 1em 0 0; padding: 0 0 1em 0; border-bottom:1px solid #dbdbdb}
+body .rs-feed #rs-main-content-top article:last-child {border-bottom: none;}
 body .rs-feed #rs-main-content-top p {font-size: 1.2em;}
 body .rs-feed #rs-main-content-top .logo img {margin-top: 50%;}
 
