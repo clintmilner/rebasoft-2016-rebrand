@@ -59,15 +59,19 @@
 
     <div id="rs-main-content-bottom" class="row">
         <div class="col-md-6 col-sm-12">
-            <h2><?php echo get_field( 'data_title' ); ?></h2>
-            <?php echo get_field( 'extra_data' ); ?>
+            <?php if( the_field('data_title') ) { ?>
+                <h2><?php echo get_field( 'data_title' ); ?></h2>
+                <?php echo get_field( 'extra_data' ); ?>
+            <?php } ?>
         </div>
         <div class="col-md-6 col-sm-12">
-            <h2><?php echo get_field( 'scenarios_title' ); ?></h2>
+            <?php if( the_field('scenarios_title') ) { ?>
+                <h2><?php echo get_field( 'scenarios_title' ); ?></h2>
 
-            <section class="scenarios">
-                <?php echo get_field( 'challenge_data' ); ?>
-            </section>
+                <section class="scenarios">
+                    <?php echo get_field( 'challenge_data' ); ?>
+                </section>
+            <?php } ?>
 
             <?php if( get_field( 'show_case_studies' ) == 'yes' ) { ?>
                 <h2>Paired Case Studies</h2>
